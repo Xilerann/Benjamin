@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P'tit morceau | Produit</title>
+    <link rel="stylesheet" href="Product_Page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="Product_Page.js"></script>
+    <link rel="icon" href="images/Rond.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img class="navbar-brand" style="margin-right: 8rem; width: 5%;" src="images/Rond.png">
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogue.html">Catalogue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="rick.html">Secret</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" style="margin-right: 30rem">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      
+      </form>
+    </div>
+  </nav>
+
+  <main>
+    <div class="left_main">
+      <div class="slide-container">
+        <div class="custom-slider fade">
+            <div class="slide-index">1 / 3</div>
+            <img class="slide-img" src="images/riz.png">
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">2 / 3</div>
+            <img class="slide-img" src="images/riz2.png">
+        </div>
+        <div class="custom-slider fade">
+            <div class="slide-index">3 / 3</div>
+            <img class="slide-img" src="images/riz3.png">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br>
+      <div class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+
+    <div class="right_main">
+      <div class="title">
+        <h1>Grain de riz</h1>
+      </div>
+
+      <div class="prix">
+        <h2>0.01€</h2>
+      </div>
+
+      <div class="description">
+          <p>Un simple grain de riz, seul et singulier, afin de remplir votre petit estomac et de rester en bonne santé</p>
+      </div>
+      <div class="selection">
+        <div class="quantite">
+          <input type="number" class="input_quantite" min="0" max="99">
+        </div>
+
+        <div class="taille">
+          <a href="#" data-toggle="dropdown"><i class="icon-arrow"></i></a>
+          <select class="dropdown">
+            <option> Quantité</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+        </div>
+      </div>
+      <div class="height">Taille du model: 1m16</div>
+      <div class="button">
+        <div class="add_to_cart">
+          <button class="add_button" type="button">Ajouter au panier</button>
+        </div>
+        <div class="buy">
+          <button class="buy_button" type="button">Acheter</button>
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <section style="background-color: #ffffff33;">
+    
+
+      <footer class="row row-cols-1 row-cols-sm-2border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+  
+          <div class="container">
+            <div class="row">
+                  <div class="span12">
+                  <div class="thumbnail center well well-small text-center">
+                          <h2>News</h2>
+                          
+                          <p>Abonnez vous afin de recevoir de petites news et publicités.</p>
+                          
+                          <form action="" method="post">
+                              <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+                                  <input type="text" id="" name="" placeholder="your@email.com">
+                              </div>
+                              <br />
+                              <input type="submit" value="S'abonner" class="btn btn-large" />
+                        </form>
+                      </div>    
+                  </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Catégories</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Entrées</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Plats</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Desserts</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Boissons</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Alcools</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Types</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Viandes</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Légumes</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Fruits</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gateaux</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Autre</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Produits phare</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Riz (singulier)</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Un petit poid</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mini pizza</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Petit oeuf cuit</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Miette</a></li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+    
+  </main>
+
+</body>
+</html>
